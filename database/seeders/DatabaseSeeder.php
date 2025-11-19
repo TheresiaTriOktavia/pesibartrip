@@ -23,9 +23,9 @@ class DatabaseSeeder extends Seeder
             // DestinationCategorySeeder::class, 
             // DestinationSeeder::class,  
             MarketplaceSeeder::class,
-            OlehOlehSeeder::class,
-            PenginapanSeeder::class,
-            TransportSeeder::class
+            // OlehOlehSeeder::class,
+            // PenginapanSeeder::class,
+            // TransportSeeder::class
         ]);
     }
 }
