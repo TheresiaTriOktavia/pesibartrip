@@ -14,6 +14,7 @@ use App\Http\Controllers\Agent\AgentPackageController;
 use App\Http\Controllers\Agent\AgentProfileController;
 use App\Http\Controllers\Agent\AgentDashboardController;
 use App\Http\Controllers\Agent\AgentBusinessController; 
+use App\Http\Controllers\AppReviewController;
 
 // ==== AUTHENTICATION ROUTES ====
 Route::middleware('guest')->group(function () {
@@ -163,4 +164,9 @@ Route::prefix('marketplace')->group(function () {
 
     // Oleh-oleh
     Route::get('/oleh-oleh', [OlehOlehController::class, 'index'])->name('oleh.index');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/ulasan-aplikasi', [AppReviewController::class, 'create'])->name('app-reviews.create');
+    Route::post('/ulasan-aplikasi', [AppReviewController::class, 'store'])->name('app-reviews.store');
 });

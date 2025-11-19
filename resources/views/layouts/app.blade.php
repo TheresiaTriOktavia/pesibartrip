@@ -229,7 +229,7 @@
                 <div class="col-md-3 text-start mb-3 mb-md-0">
                     <h6 class="fw-bold mb-2">Ikuti Kami</h6>
                     <div class="d-flex flex-column social-icons">
-                        <p class="mb-1"><a href="mailto:pesibartripku@gmail"><i class="fa fa-envelope"></i>pesibartripku@gmail.com</a></p>
+                        <p class="mb-1"><a href="mailto:pesibartripku@gmail.com"><i class="fa fa-envelope"></i>pesibartripku@gmail.com</a></p>
                         <p class="mb-1"><a href="https://www.instagram.com/pesibartripku/"><i class="fab fa-instagram"></i>pesibartripku</a></p>
                         <p class="mb-0"><a href="https://wa.me/6289521532981"><i class="fab fa-whatsapp"></i>+62 895-2153-2981</a></p>
                     </div>
@@ -237,7 +237,7 @@
                 <div class="col-md-4">
                     <h6 class="fw-bold mb-2">Informasi</h6>
                     <p class="mb-1"><a href="{{ route('tentang') }}" class="footer-link">Tentang</a></p>
-                    <p class="mb-0"><a href="#" class="footer-link">Ulasan</a></p>
+                    <p class="mb-0"><a href="{{ route('app-reviews.create') }}" class="footer-link">Ulasan</a></p>
                 </div>
             </div>
 
