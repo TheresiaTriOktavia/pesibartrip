@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Masuk - PesibarSurf')
+@section('title','Masuk - PesibarTripku')
 
 @push('styles')
 <style>
@@ -37,7 +37,7 @@
   <div class="topbar">
     <div class="brand">
       <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'">
-      <span>PesibarSurf</span>
+      <span>PesibarTripku</span>
     </div>
   </div>
 
@@ -47,8 +47,8 @@
       {{-- Gambar kiri --}}
       <div class="col-lg-6 image-col">
         <img
-          src="{{ asset('images/sunsetlog.png') }}"
-          alt="Sunset PesibarSurf"
+          src="{{ asset('images/login.jpeg') }}"
+          alt="Sunset PesibarTripku"
           loading="lazy"
           onerror="this.src='https://images.unsplash.com/photo-1511764220567-4b75a0a36eb1?q=80&w=1200&auto=format&fit=crop'">
       </div>

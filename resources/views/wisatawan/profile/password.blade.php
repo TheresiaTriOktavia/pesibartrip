@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ubah Password - PesibarSurf')
+@section('title', 'Ubah Password - PesibarTripku')
 
 @section('content')
 <div class="bg-white">

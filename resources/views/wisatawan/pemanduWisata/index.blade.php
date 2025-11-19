@@ -10,8 +10,8 @@
             
             <a href="{{ route('beranda.wisatawan') }}" class="d-flex align-items-center text-decoration-none" style="min-width: 150px;">
                 <img src="{{ asset('images/logo.png') }}" alt="PesibarSurf Logo"
-                    style="height:42px" loading="lazy" onerror="this.style.display='none'">
-                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarSurf</span>
+                    style="height:50px" loading="lazy" onerror="this.style.display='none'">
+                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarTripku</span>
             </a>
 
             <form class="flex-grow-1 mx-3 mx-md-4" action="#" method="GET">

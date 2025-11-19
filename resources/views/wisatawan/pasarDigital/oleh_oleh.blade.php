@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Oleh-oleh | PesibarSurf')
+@section('title', 'Oleh-oleh | PesibarTripku')
 
 @section('content')
 <div class="app-wrapper bg-white"> {{-- 1. Wrapper standar --}}

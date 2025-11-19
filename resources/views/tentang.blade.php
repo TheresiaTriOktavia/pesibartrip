@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang Kami - PesibarSurf')
+@section('title', 'Tentang Kami - PesibarTripku')
 
 @push('styles')
 <style>
     .about-header {
-        background: linear-gradient(90deg, #D19878, #FFE75D);
+        background: linear-gradient(100deg, #FFE467, #ffb088ff);
         padding: 60px 0;
         text-align: center;
         color: #333;
@@ -87,9 +87,9 @@
         <div class="container py-2 d-flex align-items-center justify-content-between">
             
             <a href="{{ route('beranda.wisatawan') }}" class="d-flex align-items-center text-decoration-none" style="min-width: 150px;">
-                <img src="{{ asset('images/logo.png') }}" alt="PesibarSurf Logo"
+                <img src="{{ asset('images/logo.png') }}" alt="PesibarTripku Logo"
                     style="height:42px" loading="lazy" onerror="this.style.display='none'">
-                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarSurf</span>
+                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarTripku</span>
             </a>
 
             <form class="flex-grow-1 mx-3 mx-md-4" action="#" method="GET">
@@ -185,8 +185,8 @@
 
     <div class="about-header">
         <div class="container">
-            <h1 class="display-4">Tentang PesibarSurf</h1>
-            <p class="lead">"Your Digital Travel Guide to Surf & Explore"</p>
+            <h1 class="display-4">Tentang PesibarTripku</h1>
+            <p class="lead">"Your Digital Travel Guide To Sai Bumi Ruwa Jurai and Healing Journey"</p>
         </div>
     </div>
 
@@ -194,12 +194,12 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <img src="{{ asset('images/beach.png') }}" class="hero-about-img" alt="Pantai di Pesisir Barat">
+                    <img src="{{ asset('images/pantai.png') }}" class="hero-about-img" alt="Pantai di Pesisir Barat">
                 </div>
                 <div class="col-lg-6 text-start">
                     <h2 class="fw-bold mb-3">Siapa Kami?</h2>
                     <p class="fs-5" style="color: #555;">
-                        <strong>PesibarSurf</strong> adalah biro jasa pariwisata digital yang berdedikasi untuk memajukan potensi wisata di Lampung, khususnya Pesisir Barat.
+                        <strong>PesibarTripku</strong> adalah biro jasa pariwisata digital yang berdedikasi untuk memajukan potensi wisata di Lampung, khususnya Pesisir Barat.
                     </p>
                     <p class="text-muted">
                         Kami adalah platform satu atap yang menghubungkan wisatawan dengan keindahan alam, kekayaan budaya, dan pelaku UMKM lokal. Misi kami adalah menyediakan panduan perjalanan yang praktis, personal, dan penuh makna, sekaligus memberikan dampak positif bagi perekonomian lokal.
@@ -240,7 +240,7 @@
 
     <section>
         <div class="container">
-            <h2 class="fw-bold text-center mb-5">Tim Hebat di Balik PesibarSurf</h2>
+            <h2 class="fw-bold text-center mb-5">Tim Hebat di Balik PesibarTripku</h2>
             <p class="text-center text-muted mb-4">
                 Kami adalah mahasiswa dari Universitas Lampung yang berkolaborasi dalam Program Mahasiswa Wirausaha (PMW).
             </p>
@@ -248,29 +248,29 @@
                 {{-- Data tim diambil dari proposal --}}
                 <div class="col-6 col-md-3">
                     <div class="team-card">
-                        <img src="{{ asset('images/team/kinanti.jpeg') }}" alt="Foto Kinanthi Cita Laksana" class="team-member-img">
-                        <h5>Kinanthi Cita Laksana</h5>
+                        <img src="{{ asset('images/team/ilham.png') }}" alt="M. Ilham Fadhillah" class="team-member-img">
+                        <h5>M. Ilham Fadhillah</h5>
                         <p>Ketua Pengusul</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="team-card">
-                        <img src="#" alt="Foto Rosdiana Septrie Lestari" class="team-member-img">
-                        <h5>Rosdiana Septrie Lestari</h5>
+                        <img src="{{ asset('images/team/theresia.jpeg') }}" alt="Rafiqoh Salma" class="team-member-img">
+                        <h5>Rafiqoh Salma</h5>
                         <p>Anggota</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="team-card">
-                        <img src="#" alt="Foto Kezia Natalia Wongkar" class="team-member-img">
-                        <h5>Kezia Natalia Wongkar</h5>
+                        <img src="{{ asset('images/team/theresia.jpeg') }}" alt="Sheila Novitri" class="team-member-img">
+                        <h5>Sheila Novitri</h5>
                         <p>Anggota</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="team-card">
-                        <img src="{{ asset('images/team/febrina.jpg') }}" alt="Foto Febrina Aulia Azahra" class="team-member-img">
-                        <h5>Febrina Aulia Azahra</h5>
+                        <img src="{{ asset('images/team/theresia.jpeg') }}" alt="Theresia Tri Oktavia Irmawanti" class="team-member-img">
+                        <h5>Theresia Tri Oktavia I</h5>
                         <p>Anggota</p>
                     </div>
                 </div>

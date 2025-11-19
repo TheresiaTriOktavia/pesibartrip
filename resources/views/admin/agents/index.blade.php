@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Kelola Agen & Verifikasi - PesibarSurf')
+@section('title', 'Kelola Agen & Verifikasi - PesibarTripku')
 
 @section('admin_content')
 

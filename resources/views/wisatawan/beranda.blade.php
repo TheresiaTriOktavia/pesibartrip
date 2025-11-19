@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Beranda - PesibarSurf')
+@section('title', 'Beranda - PesibarTripku')
 
 {{-- STYLE KHUSUS KARTU KATEGORI DESTINASI --}}
 @push('styles')
@@ -68,8 +68,8 @@
             
             <a href="{{ route('beranda.wisatawan') }}" class="d-flex align-items-center text-decoration-none" style="min-width: 150px;">
                 <img src="{{ asset('images/logo.png') }}" alt="PesibarSurf Logo"
-                    style="height:42px" loading="lazy" onerror="this.style.display='none'">
-                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarSurf</span>
+                    style="height:50px" loading="lazy" onerror="this.style.display='none'">
+                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarTripku</span>
             </a>
 
             <form class="flex-grow-1 mx-3 mx-md-4" action="#" method="GET">
@@ -156,13 +156,13 @@
                         Jelajahi Pesona Pesisir Barat
                     </h2>
                     <p class="mb-3 mb-md-4" style="font-size:0.95rem; color:#555;">
-                        Temukan destinasi pantai, spot surfing, kuliner, hingga penginapan terbaik di Pesibar,
+                        Temukan destinasi pantai, kuliner, hingga penginapan terbaik di Pesibar,
                         semuanya dalam satu aplikasi.
                     </p>
 
                     <div class="d-flex flex-wrap gap-2 justify-content-center">
                         <span class="badge rounded-pill bg-light text-dark border">
-                            🌊 Pantai & Surfing
+                            🌊 Pantai
                         </span>
                         <span class="badge rounded-pill bg-light text-dark border">
                             🏕 Destinasi Alam
@@ -175,7 +175,7 @@
 
                 <div class="col-12 col-md-5 d-none d-md-block">
                     <div class="rounded-4 overflow-hidden shadow-sm">
-                        <img src="{{ asset('images/wave.png') }}"
+                        <img src="{{ asset('images/pantai jukung.jpg') }}"
                              alt="Pantai Pesibar"
                              style="width:100%; height:230px; object-fit:cover;">
                     </div>

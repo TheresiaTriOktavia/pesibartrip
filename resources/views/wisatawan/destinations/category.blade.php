@@ -11,7 +11,7 @@
             <a href="{{ route('beranda.wisatawan') }}" class="d-flex align-items-center text-decoration-none" style="min-width: 150px;">
                 <img src="{{ asset('images/logo.png') }}" alt="PesibarSurf Logo"
                     style="height:42px" loading="lazy" onerror="this.style.display='none'">
-                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarSurf</span>
+                <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarTripku</span>
             </a>
 
             <form class="flex-grow-1 mx-3 mx-md-4" action="#" method="GET">
@@ -82,7 +82,7 @@
 
     <div style="background: linear-gradient(to bottom, #FFF8E7, #FFFFFF);" class="py-5">
         <div class="container">
-            <h1 class="h3 fw-bold text-dark mb-4">{{ $category->name }} Pilihan PesibarSurf</h1>
+            <h1 class="h3 fw-bold text-dark mb-4">{{ $category->name }} Pilihan PesibarTripku</h1>
             
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 @forelse($destinations as $destination)

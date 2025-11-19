@@ -1,6 +1,6 @@
 @extends('layouts.agent') {{-- MEWARISI LAYOUT BARU --}}
 
-@section('title', 'Kelola Paket Tour - PesibarSurf')
+@section('title', 'Kelola Paket Tour - PesibarTripku')
 
 @push('styles')
 <style>

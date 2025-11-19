@@ -1,6 +1,6 @@
 @extends('layouts.agent') {{-- Menggunakan layout agen --}}
 
-@section('title', 'Edit Paket Tour - PesibarSurf')
+@section('title', 'Edit Paket Tour - PesibarTripku')
 
 @push('styles')
 <style>

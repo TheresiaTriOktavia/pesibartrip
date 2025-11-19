@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Registrasi - PesibarSurf')
+@section('title','Registrasi - PesibarTripku')
 
 @push('styles')
 <style>
@@ -46,7 +46,7 @@
   <div class="topbar">
     <div class="brand">
       <img src="{{ asset('images/logo.png') }}" alt="Logo" onerror="this.style.display='none'">
-      <span>PesibarSurf</span>
+      <span>PesibarTripku</span>
     </div>
   </div>
 
@@ -56,7 +56,7 @@
       {{-- Gambar kiri (muncul mulai md) --}}
       <div class="col-lg-6 image-col d-none d-md-block">
         <img
-          src="{{ asset('images/sunsetlog.png') }}"
+          src="{{ asset('images/pantai.png') }}"
           alt="Sunset PesibarSurf"
           class="w-100"
           style="height:600px;object-fit:cover;border-radius:16px"
@@ -133,7 +133,7 @@
           </p>
 
           <p class="text-center mt-2 mb-0 small text-muted">
-            Ingin menjadi bagian dari mitra Pesibar Surf? 
+            Ingin menjadi bagian dari mitra Pesibar Tripku? 
             <a href="{{ route('register.agent') }}" class="text-danger text-decoration-none fw-semibold">
                 Daftar disini
             </a>

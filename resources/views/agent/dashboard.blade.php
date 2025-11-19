@@ -1,6 +1,6 @@
 @extends('layouts.agent') 
 
-@section('title', 'Dashboard Agen - PesibarSurf')
+@section('title', 'Dashboard Agen - PesibarTripku')
 
 @push('styles')
 <style>

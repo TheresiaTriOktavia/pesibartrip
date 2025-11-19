@@ -1,6 +1,6 @@
 @extends('layouts.agent')
 
-@section('title', 'Daftar Usaha - PesibarSurf')
+@section('title', 'Daftar Usaha - PesibarTripku')
 
 @push('styles')
 <style>

@@ -1,6 +1,6 @@
 @extends('layouts.agent') {{-- MEWARISI LAYOUT BARU --}}
 
-@section('title', 'Buat Profil Agensi - PesibarSurf')
+@section('title', 'Buat Profil Agensi - PesibarTripku')
 
 @push('styles')
 <style>
