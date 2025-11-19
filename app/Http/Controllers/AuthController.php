@@ -43,17 +43,12 @@ class AuthController extends Controller
             }
 
             if ($user->role === 'agent') {
-                
-                // --- INI BAGIAN PENTING ---
                 // Ambil profil agen dari user
                 $agent = $user->agent;
 
                 // Tentukan nama yang akan disapa
-                // Jika profil agen sudah diisi, gunakan nama agensi ($agent->name)
-                // Jika belum (masih null), gunakan nama lengkap user ($user->full_name)
                 $agentName = $agent ? $agent->name : $user->full_name;
                 
-                // Arahkan ke dashboard agen dengan NAMA DINAMIS
                 return redirect()->intended(route('agent.dashboard'))
                     ->with('success', 'Selamat datang kembali, ' . $agentName . '!');
             }
@@ -91,7 +86,7 @@ class AuthController extends Controller
             'full_name' => $request->full_name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => 'user', // Default role untuk user baru
+            'role' => 'user',
         ]);
 
         Auth::login($user);
@@ -119,7 +114,7 @@ class AuthController extends Controller
      */
     public function showAgentRegisterForm()
     {
-        return view('auth.register-agent'); // Ini sudah benar
+        return view('auth.register-agent');
     }
 
     /**
@@ -137,12 +132,11 @@ class AuthController extends Controller
             'full_name' => $request->full_name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => 'agent', // Ini sudah benar
+            'role' => 'agent',
         ]);
 
         Auth::login($user);
 
-        // Mengarahkan ke dashboard agen (ini sudah benar)
         return redirect()->route('agent.dashboard')
             ->with('success', 'Akun Anda berhasil dibuat! Selamat datang di PesibarSurf.');
     }

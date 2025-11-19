@@ -255,14 +255,14 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="team-card">
-                        <img src="{{ asset('images/team/theresia.jpeg') }}" alt="Rafiqoh Salma" class="team-member-img">
+                        <img src="{{ asset('images/team/salma.jpeg') }}" alt="Rafiqoh Salma" class="team-member-img">
                         <h5>Rafiqoh Salma</h5>
                         <p>Anggota</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="team-card">
-                        <img src="{{ asset('images/team/theresia.jpeg') }}" alt="Sheila Novitri" class="team-member-img">
+                        <img src="{{ asset('images/team/sheila.jpeg') }}" alt="Sheila Novitri" class="team-member-img">
                         <h5>Sheila Novitri</h5>
                         <p>Anggota</p>
                     </div>
