@@ -10,15 +10,20 @@ return new class extends Migration
     {
         Schema::create('transport_daerah', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('agent_id')->nullable()->after('id')->constrained('agents')->onDelete('cascade');
+            $table->foreignId('agent_id')
+                  ->nullable()
+                  ->constrained('agents')
+                  ->onDelete('cascade');
+
             $table->string('type');                // mobil, motor, penyeberangan
             $table->string('name');                // Nama agen
-            $table->string('image');               // Path gambar, misal: images/transport/mobil-a.png
-            $table->string('location');            // Lokasi, misal: Krui, Pesisir Barat
-            $table->decimal('rating', 2, 1)->nullable();  // 4.8, 5.0, dll
-            $table->string('price_range')->nullable();    // Misal: "Mulai Rp 150.000"
+            $table->string('image');               // path gambar
+            $table->string('location');            // Lokasi
+            $table->decimal('rating', 2, 1)->nullable();  // Rating
+            $table->string('price_range')->nullable();    // Kisaran harga
             $table->text('description')->nullable();      // Deskripsi singkat
             $table->string('whatsapp')->nullable();       // Nomor WA
+            
             $table->timestamps();
         });
     }

@@ -10,14 +10,19 @@ return new class extends Migration
     {
         Schema::create('penginapan', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('agent_id')->nullable()->after('id')->constrained('agents')->onDelete('cascade');
-            $table->string('name');               // Nama penginapan
-            $table->string('image');              // path gambar
-            $table->string('location');           // Lokasi, misal: Krui, Pesisir Barat
+            $table->foreignId('agent_id')
+                  ->nullable()
+                  ->constrained('agents')
+                  ->onDelete('cascade');
+            
+            $table->string('name');     // Nama penginapan
+            $table->string('image');    // path gambar
+            $table->string('location'); // Lokasi
             $table->decimal('rating', 2, 1)->nullable(); // Rating, misal 4.5
-            $table->string('price_start')->nullable();   // Harga mulai, misal: "Rp 250.000/malam"
-            $table->text('description')->nullable();     // Deskripsi singkat
-            $table->string('whatsapp')->nullable();      // No WA untuk tombol "Hubungi"
+            $table->string('price_start')->nullable();   // Harga mulai
+            $table->text('description')->nullable();     // Deskripsi
+            $table->string('whatsapp')->nullable();      // No WA
+            
             $table->timestamps();
         });
     }
