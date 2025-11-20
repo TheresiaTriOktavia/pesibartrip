@@ -8,7 +8,7 @@
         <a href="{{ route('beranda.wisatawan') }}" class="d-flex align-items-center text-decoration-none" style="min-width: 150px;">
             <img src="{{ asset('images/logo.png') }}" alt="PesibarSurf Logo"
                 style="height:42px" loading="lazy" onerror="this.style.display='none'">
-            <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarSurf</span>
+            <span class="ms-2 fw-bold text-dark d-none d-md-block">PesibarTripKu</span>
         </a>
 
         <form class="flex-grow-1 mx-3 mx-md-4" action="#" method="GET">
@@ -127,7 +127,7 @@
                         </div>
                         <div>
                             <p class="text-muted small mb-0 text-uppercase ls-1">Ulasan Aplikasi</p>
-                            <h6 class="fw-bold mb-0 text-dark">PesibarSurf</h6>
+                            <h6 class="fw-bold mb-0 text-dark">PesibarTripKu</h6>
                         </div>
                     </div>
 

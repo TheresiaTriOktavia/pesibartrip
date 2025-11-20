@@ -21,7 +21,7 @@
     <section>
         <div class="container">
             <img src="{{ asset('images/wave.png') }}" class="hero-img mb-4" alt="Pantai Surfing">
-            <h4 class="fw-bold"><span class="typing">Selamat Datang di PesibarSurf!</span></h4>
+            <h4 class="fw-bold"><span class="typing">Selamat Datang di PesibarTripKu!</span></h4>
             <p class="text-muted">
                 Temukan pengalaman healing yang menenangkan di penjuru wilayah <br>
                 provinsi Lampung. Wisata praktis, personal, dan penuh makna.
